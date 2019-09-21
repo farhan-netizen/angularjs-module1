@@ -21,7 +21,8 @@
         <div class="form-group">
             <input id="lunch-menu" type="text" placeholder="list comma separated dishes you usually have for lunch"
                 class="form-control" ng-model="dish">
-
+                <br>
+                NOT consider an empty item, i.e., , , as an item towards to the count.
         </div>
         <br>
         <div class="form-group">
@@ -32,9 +33,9 @@
             <br>
             <!-- Your message can go here. -->
             <div>
-                <textarea ng-style="customStyle.style">
+                    <strong>   <textarea ng-style="customStyle.style">
            {{ message }}
-                </textarea>
+                </textarea> </strong>
             </div>
         </div>
     </div>
