@@ -2,7 +2,6 @@ var app = angular.module("myApp", []);
 
 app.controller("LunchCheckController", function ($scope) {
     $scope.dish = "";
-    $scope.totalcount = 0;
     $scope.message = "";
     $scope.customStyle = {};
 
@@ -13,7 +12,6 @@ app.controller("LunchCheckController", function ($scope) {
     };
 
     function counttotal(string) {
-        console.log(string[0]);
 
         var totalString = 1;
         for (var i = 0; i < string.length; i++) {
